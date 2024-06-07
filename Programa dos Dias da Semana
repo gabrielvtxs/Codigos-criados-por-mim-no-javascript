@@ -1,0 +1,14 @@
+alert("boas vindas")
+let diadasemana = prompt("qual o dia da semana?").toLowerCase();
+
+const diasdasemana = ["segunda feira", "terça feira", "quarta feira","quinta feira", "sexta feira", "sabado", "domingo"]
+
+if (diasdasemana.includes(diadasemana)) {
+    if (diadasemana === "sabado" || diadasemana === "domingo") {
+        alert("bom final de semana");
+    } else {
+        alert("boa semana");
+    } 
+} else {
+        alert("digite um dia da semana valido")
+    }
