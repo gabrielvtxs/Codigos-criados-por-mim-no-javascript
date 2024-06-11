@@ -1,0 +1,36 @@
+alert("bem vindo ao quiz");
+alert("o quiz sera composto por 2 perguntas de conhecimentos gerais")
+let pontuaçao = 0
+const primeirasperguntas = ["socrates","platao","descartes","galileu", "platão"]
+let primeirapergunta = prompt("1. De quem é a famosa frase “Penso, logo existo”?    A) Platão B) Galileu c) Descartes d) Sócrates").toLowerCase();
+
+if (primeirapergunta === "descartes") {
+    alert("parabens você acertou")
+    pontuaçao = pontuaçao + 50;
+    console.log(pontuaçao)
+} else if (primeirasperguntas.includes(primeirapergunta)) {
+    alert("opa, voce errou");
+} else {
+   alert("digite uma resposta valida");
+}
+//apartir daqui e so repetiçao//
+
+const segundasperguntas = ["dom quixote","o senhor dos aneis","um conto de duas cidades","o pequeno principe"]
+let segundapergunta = prompt("2. Qual o livro mais vendido no mundo a seguir à Bíblia? A)dom quixote B) o pequeno principe C)um conto de duas cidades D(senhor dos aneis) "
+).toLowerCase();
+
+if (segundapergunta === "dom quixote") {
+    alert("parabens você acertou")
+    pontuaçao = pontuaçao + 50;
+    console.log(pontuaçao)
+} else if (segundasperguntas.includes(segundapergunta)) {
+    alert("opa, voce errou");
+} else {
+   alert("digite uma resposta valida");
+}
+if (pontuaçao == 100) {
+    alert("parabens voce venceu")
+}
+else {
+    alert("voce nao alcançou a pontuaçao, tente novamente para ganhar")
+}
